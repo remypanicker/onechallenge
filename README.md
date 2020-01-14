@@ -1,5 +1,5 @@
 # OneMain Dad Jokes App
-Simple, fast secure. Shows dad jokes from https://icanhazdadjoke.com when launched 
+Simple, fast, secure. Shows dad jokes from https://icanhazdadjoke.com when launched 
 
 # Project Setup
 Build with gradle as usual. Edit with Android Studio.
