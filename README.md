@@ -1,21 +1,35 @@
 # OneMain Dad Jokes App
-Simple, fast, secure. Shows dad jokes from https://icanhazdadjoke.com when launched 
+Simple, fast, secure. Shows dad jokes from [https://icanhazdadjoke.com](https://icanhazdadjoke.com) when launched.
+
 
 # Project Setup
-Build with gradle as usual. Edit with Android Studio.
+Build with gradle. Edit with Android Studio.
+
+# Technical Assignment
+The suggested time to complete the assignment is 1-2 hours **maximum**. 
+
+Candidates are required to complete a minimum of:
+
+- One task from the Roadmap section
+- One task from the Tech Debt section
+- One task from the Bugs section
+
+After completing the required tasks, if there is leftover time, feel free to pick up additional tasks to help demonstrate your skillset.
+
+Please be prepared to discuss your implementation in-depth.
 
 # Roadmap
-- Swipe to Refresh joke https://developer.android.com/training/swipe/add-swipe-interface
+- Swipe to Refresh joke [Android Training - Add Swipe Interface](https://developer.android.com/training/swipe/add-swipe-interface)
 - Show some sort of a loading spinner
-- Show list of jokes as per https://icanhazdadjoke.com/search API or similar
-- Search for jokes
+- Show list of jokes as per [API Reference - Search](https://icanhazdadjoke.com/api#search-for-dad-jokes)
+- Search for jokes [API Reference - Search](https://icanhazdadjoke.com/api#search-for-dad-jokes)
 - Share a joke (looks like there is a way to generate a permalink)
 
-# Tech debt
-- Communicate user-agent as per https://icanhazdadjoke.com/api#custom-user-agent
-- Add Repository layer as recommended in https://developer.android.com/jetpack/docs/guide
-- Some mature dependency injection would be nice https://insert-koin.io
-- Add testing (unit tests and/or espresso tests). Need to make sure tests are runnable via gradle CL.
+# Tech Debt
+- Communicate `User-Agent` as per [API Reference - Custom User Agent](https://icanhazdadjoke.com/api#custom-user-agent)
+- Add Repository layer as recommended in [Android Developer Guide](https://developer.android.com/jetpack/docs/guide)
+- Refactor existing codebase to leverage a mature dependency injection solution (Ex: [Koin](https://insert-koin.io)).
+- Add unit tests and/or espresso tests. Tests should be executable via gradle CL.
 
 # Bugs
-- Screen rotation fetches new joke
+- Screen rotation fetches a new joke. Rotating the screen should **NOT** cause the app to fetch a new joke.
